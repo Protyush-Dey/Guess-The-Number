@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif; 
+    color: black;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #b181ff;
+}
+
+
+#card{
+    margin:100px auto 0;
+    width: 500px;
+    padding: 20px;
+    background-color: #eaddff;   
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb( 00,00,00, 0.2);
+}
+#logo{
+    text-align: center;
+    font-size: 45px;
+    font-family: "Matemasie", sans-serif;
+}
+#moves{
+    display: flex;
+    justify-content: end;
+    margin-top: 15px;
+    margin-right: 40px;
+    gap: 5px;
+}
+#guess{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 2cm;
+    margin: 20px auto 0;
+
+    padding: 0 10px 0 10px;
+}
+#number{
+    height: 1.5cm;
+    width: 48%;
+    text-align: center;
+    font-size: 1cm;
+    border-radius: 10px;
+}
+#button{
+    height: 1.5cm;
+    width: 48%; 
+    font-size: 1cm;
+    font-weight: bold;
+    border-radius: 10px;
+    padding-bottom:10px;
+    transition: .3s ease;
+}
+#button:hover{
+    background-color:#9500c2;
+    box-shadow: 2px 2px 2px rgb( 00,00,00, 0.5);
+}
+#result{
+    display: flex;
+    align-items: center;
+    margin: 30px 60px 10px 60px;
+    justify-content: space-between;
+
+
+    height: 2cm;
+}
+#result .h{
+    border: 1px black solid;
+    width: 40%;
+    font-size: 1.5cm;
+    border-radius: 10px;
+    height: 100%;
+    padding-top: 10px;
+    text-align: center;
+    align-items: center;
+}
+#result .t{
+    background-color: rgb(110, 2, 188);
+    animation: blink 1.5s linear infinite;
+}
+@keyframes blink {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+
+}
+#restart{
+    display: grid;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    gap: 10px;
+}
+#restart p{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#restart .re{
+    height: 1.5cm;
+    width: 80%;
+    margin: 10px auto 0;
+    border-radius: 10px;
+    font-size: 1.2cm;
+    box-shadow:  5px 5px 5px rgb( 00,00,00, 0.2);
+    transition: .3s ease;
+    border: none;
+}
+#restart .re:hover{
+    box-shadow:  5px 5px 5px rgb( 00,00,00, 0.5);
+    background-color: #EE4E4E;
+    
+}
+@media only screen and (max-width: 600px){
+   body{
+
+   }
+    #card{ margin: 0;
+        width: 100%;
+        height: 100vh;
+        padding-top: 100px;
+        border-radius: 0;
+        background-color: #eaddff;   
+                box-shadow: none;
+    }
+    #logo{
+        text-align: center;
+        font-size: 40px;
+        font-family: "Matemasie", sans-serif;
+    }
+}
